@@ -67,12 +67,8 @@ $jquery = $gantry->get('jquery');
             </div>
         <?php /** End Drawer * */ endif; ?>
         <?php /** Begin Top * */ if ($gantry->countModules('top')) : ?>
-            <div id="jb-top" class="navbar navbar-fixed-top">
-                <div class="navbar-inner">
-                    <div class="container<?php echo $gridsystem ?>">                       
-                        <?php echo $gantry->displayModules('top', 'basic', 'basic'); ?>
-                    </div>                   
-                </div>
+            <div id="jb-top" class="container<?php echo $gridsystem ?>"> //moved fixed navbar into menu's default.php
+                <?php echo $gantry->displayModules('top', 'basic', 'basic'); ?>
             </div>
         <?php /** End Top * */ endif; ?>
         <?php /** Begin Header * */ if ($gantry->countModules('header')) : ?>
