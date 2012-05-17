@@ -14,7 +14,11 @@ defined('_JEXEC') or die;
 
 // Note. It is important to remove spaces between elements.
 ?>
-
+<a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+</a> //button for collapse menu
 <div class="nav-collapse collapse"><ul class="nav <?php echo $class_sfx; ?>"<?php
 $tag = '';
 if ($params->get('tag_id') != NULL) {
